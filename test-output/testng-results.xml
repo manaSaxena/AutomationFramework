@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30103" started-at="2019-09-08T12:10:29Z" finished-at="2019-09-08T12:11:00Z">
+  <suite name="Suite" duration-ms="42098" started-at="2019-09-08T12:50:43Z" finished-at="2019-09-08T12:51:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30103" started-at="2019-09-08T12:10:29Z" finished-at="2019-09-08T12:11:00Z">
+    <test name="Test" duration-ms="42098" started-at="2019-09-08T12:50:43Z" finished-at="2019-09-08T12:51:25Z">
       <class name="testscripts.TestLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:testscripts.TestLogin@cb5822]" name="openApplication" is-config="true" duration-ms="15316" started-at="2019-09-08T12:10:29Z" finished-at="2019-09-08T12:10:45Z">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:testscripts.TestLogin@4b9e13df]" name="openApplication" is-config="true" duration-ms="22012" started-at="2019-09-08T12:50:43Z" finished-at="2019-09-08T12:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:testscripts.TestLogin@cb5822]" name="testLogin" duration-ms="12277" started-at="2019-09-08T12:10:45Z" finished-at="2019-09-08T12:10:57Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testscripts.TestLogin@4b9e13df]" name="testLogin" duration-ms="17919" started-at="2019-09-08T12:51:05Z" finished-at="2019-09-08T12:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestLogin@cb5822]" name="closeApplication" is-config="true" duration-ms="2475" started-at="2019-09-08T12:10:57Z" finished-at="2019-09-08T12:11:00Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:testscripts.TestLogin@4b9e13df]" name="closeApplication" is-config="true" duration-ms="2130" started-at="2019-09-08T12:51:23Z" finished-at="2019-09-08T12:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- testscripts.TestLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

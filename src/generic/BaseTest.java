@@ -26,7 +26,7 @@ public class BaseTest implements IAutoConstant{
 	
 	@BeforeMethod
 	public void openApplication(){
-			driver = new ChromeDriver();
+			driver = new FirefoxDriver();
 			String url = Lib.getProperty(CONFIG_PATH, "URL");
 			driver.get(url);
 			String ITO = Lib.getProperty(CONFIG_PATH, "ImplicitTimeOut");
@@ -43,14 +43,21 @@ public class BaseTest implements IAutoConstant{
 	 * Capture screenshots for failed TC
 	 * 
 	 */
-	public void captureScreenshot(String testname) throws IOException{
-			Date d = new Date();
-			String currentdate = d.toString().replaceAll(":", "_");
-			TakesScreenshot ts = (TakesScreenshot) driver;
-			File srcFile = ts.getScreenshotAs(OutputType.FILE);
-			File destFile = new File("./screenshot"+currentdate+"/"+testname+"_screenshot.png");
-
-				Files.copy(srcFile, destFile);
-
+	public void captureScreenshot(String testname){
+		Date d = new Date();
+		String currentdate = d.toString().replaceAll(":", "_");
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File srcFile = ts.getScreenshotAs(OutputType.FILE);
+		
+		File destFile = new File(".\\screenshot\\" + currentdate +"_" + testname + "_screenshot.png");
+		//File destFile = new File("."+File.pathSeparator+"screenshot"+File.pathSeparator+ currentdate +"_" + testname + "_screenshot.png");
+		
+		
+		try {
+			Files.copy(srcFile, destFile);
+		} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
